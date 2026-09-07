@@ -70,6 +70,14 @@ Document lessons learned
 | `evidence-checklist.md` | Evidence to collect and preserve during the investigation. |
 | `sample-cloudtrail-event.json` | Sanitized example of a CloudTrail event used for analysis practice. |
 
+## Sample CloudTrail Event
+
+This repository includes a fictional CloudTrail management event for hands-on analysis:
+
+[View the sanitized sample event](sample-cloudtrail-event.json)
+
+The event shows an IAM user named `finance-reporting` calling `CreateAccessKey` for a different user named `backup-automation`. It is intentionally suspicious but does not prove compromise on its own. An analyst should validate the source IP address, user agent, authorization model, change record, workload ownership, and related CloudTrail activity before deciding whether to contain the credential.
+
 ## Sample Investigation Questions
 
 During triage, an analyst should be able to answer questions such as:
