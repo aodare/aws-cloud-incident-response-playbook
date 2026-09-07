@@ -1,0 +1,28 @@
+# AWS CLI credentials and local configuration
+.aws/
+credentials
+config
+
+# Environment and secrets files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Incident evidence and local exports
+evidence/
+exports/
+logs/
+*.log
+*.zip
+*.tar
+*.tar.gz
+
+# Operating system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
